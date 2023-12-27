@@ -875,11 +875,11 @@ input[type="submit"].active{
 
 @media all and (max-width:370px) {
     .vermais{
-        margin-left: 80px;
+        margin-left: 120px;
     }
 
     .voltar{
-        margin-left: 80px;
+        margin-left: 110px;
     }
 
     .pautor{

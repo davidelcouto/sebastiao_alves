@@ -36,7 +36,7 @@
                         <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
                             <ul class="navbar-nav">
                             <li class="nav-item">
-                                <a class="nav-link menu selected" aria-current="page" href="index.html">home</a>
+                                <a class="nav-link menu" aria-current="page" href="index.html">home</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link menu" aria-current="page" href="autor.html">autor</a>
@@ -58,13 +58,13 @@
                                     <form action="livro4.html">   
                                         <li><button name="livro" value="" class="dropdown-item submenu mt-3">o velho que pensava que fugia</button></li>
                                     </form>
-                                </ul> 
+                                </ul>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link menu" aria-current="page" href="imprensa.html">imprensa</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link menu" aria-current="page" href="contactos.html">contactos</a>
+                                <a class="nav-link menu selected" aria-current="page" href="contactos.html">contactos</a>
                             </li>
                             </ul>
                         </div>
@@ -153,7 +153,7 @@
                         <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
                             <ul class="navbar-nav">
                                 <li class="nav-item">
-                                    <a class="nav-link menu selected" aria-current="page" href="index.html">home</a>
+                                    <a class="nav-link menu" aria-current="page" href="index.html">home</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link menu" aria-current="page" href="autor.html">autor</a>
@@ -175,13 +175,13 @@
                                         <form action="livro4.html">    
                                             <li><button name="livro" value="" class="dropdown-item submenu mt-3">o velho que pensava que fugia</button></li>
                                         </form>
-                                    </ul> 
+                                    </ul>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link menu" aria-current="page" href="imprensa.html">imprensa</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link menu" aria-current="page" href="contactos.html">contactos</a>
+                                    <a class="nav-link menu selected" aria-current="page" href="contactos.html">contactos</a>
                                 </li>
                             </ul>
                         </div>
@@ -256,95 +256,75 @@
 
         <!--MAIN-->
 
-        <main class="container-fluid px-0">
-            <div class="row caixaautor">
-                <div class="col-12">
-                    <div class="col-11 pt-md-0 img-autor">
-                        <img src="/imagens/desktop/FOTO-editada.jpg" alt="foto_editada">
+        <main class="container-fluid px-0 foco" id="main">
+            <div class="row caixaautor2">
+                <div class="col-10 textocaixa ms-5">
+                    <div class="row">
+                        <div class="col novidade">contactos</div>                        
                     </div>
-                    <div class="col-11 bemvindo">
-                        <div class="row">
-                            <div class="col-12 t1">bem vindo ao meu website</div>
-                            <div class="row">
-                                <div class="col-12 p bemvindo-desc text-justify">
-                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione voluptate eum molestias ut eligendi neque ab cum! Sed repellendus minima, at adipisci aspernatur illum officiis rerum vel beatae nisi ex.
-                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium suscipit, aliquid, molestiae ut totam dolore minus numquam eos deserunt exercitationem rerum a veritatis mollitia excepturi repellat esse saepe delectus voluptatum.
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-12">
-                                    <a href="autor.html">
-                                        <button class="saber_mais bemvindo-sm"></button>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="row">
+                        <div class="col t1 pb-3">pode contactar-me atraves do e-mail ou telefone</div>                       
                     </div>
                 </div>
             </div>
-
-            <div class="row titulo-destaques">
-                <div class="col-12 p-0 t1">últimos livros</div>
-                <div class="col-12 mt-3 p-0 p">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium suscipit, aliquid, molestiae ut totam dolore minus numquam eos deserunt exercitationem rerum a veritatis mollitia excepturi repellat esse saepe delectus voluptatum.
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium suscipit, aliquid, molestiae ut totam dolore minus numquam eos deserunt exercitationem rerum a veritatis mollitia excepturi repellat esse saepe delectus voluptatum.
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium suscipit, aliquid, molestiae ut totam dolore minus numquam eos deserunt exercitationem rerum a veritatis mollitia excepturi repellat esse saepe delectus voluptatum.
+        
+            <div class="row mx-0 d-flex justify-content-center text-center mt-5 d-md-block d-none">
+                <div class="col-12 contactos">
+                    <div class="row mt-5 d-flex justify-content-center text-center">
+                        <div class="col-3 contato_titulo2">Telefone</div>
+                        <div class="col-2 ms-5 contato_titulo2">morada</div>
+                        <div class="col-3 ms-5 contato_titulo2">e-mail</div>
+                    </div>
+                    <div class="row mt-1 d-flex justify-content-center text-center">
+                        <div class="col-3 contato_conteudo">+351 123 456 789</div>
+                        <div class="col-3 contato_conteudo">Lorem ipsum dolor sit amet, 12 1234-543 Lorem</div>
+                        <div class="col-3 contato_conteudo">lorem@lorem.pt</div>
+                    </div>                       
                 </div>
-            </div>    
-
-            <div class="row destaques-cards mt-5 d-flex justify-content-center gap-4">
-                <div class="col-md-12 col-lg-12 col-xs-12 destaque-card p-0">
-                    <div class="row p-0">
-                        <div class="col-12">
-                            <img class="img-dest" src="/imagens/desktop/livro1.jpg" alt="livro1">
-                        </div>
-                    </div>
-                    <div class="col p-0 dest-titulo mt-3 mx-4">senhora do amor e da guerra </div>
-                    <div class="col novidade mx-4 mt-2">Novidade</div>
-                    <div class="col p mx-4 p-1">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas molestias dolorem itaque nostrum delectus esse voluptatem corporis earum, reiciendis, voluptatibus accusamus reprehenderit.
-                    </div>
-                    <div class="col">
-                        <form action="livro.html">
-                            <button name="livro" value="" class="saber_mais destaque-sm me-4 mt-2"></button>
-                        </form>
-                    </div>
+        
+                <div class="row d-flex justify-content-center text-center">
+                    <div class="col-1 linha4 mt-5 mb-2 ms-3 d-flex"></div>
                 </div>
-
-                <div class="col-md-12 col-lg-12 col-xs-12 destaque-card p-0">
-                    <div class="row p-0">
-                        <div class="col-12">
-                            <img class="img-dest" src="/imagens/desktop/livro2.jpg" alt="livro1">
+        
+                <div class="row d-flex justify-content-center text-center">
+                    <div class="col-12">
+                        <div class="row mt-5 d-flex justify-content-center text-center">
+                            <div class="col-3 ms-2 contato_titulo2">Horário</div>
                         </div>
-                    </div>
-                    <div class="col p-0 dest-titulo mt-3 mx-4">o velho que pensava que fugia</div>
-                    <div class="col novidade mx-4 mt-2">Novidade</div>
-                    <div class="col p mx-4 p-1">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas molestias dolorem itaque nostrum delectus esse voluptatem corporis earum, reiciendis, voluptatibus accusamus reprehenderit.?
-                    </div>
-                    <div class="col">
-                        <form action="livro.html">
-                            <button name="livro" value="" class="saber_mais destaque-sm me-4 mt-2"></button>
-                        </form>
+                        <div class="row mt-1 d-flex justify-content-center text-center mb-5">
+                            <div class="col-3 ms-2 contato_conteudo">De Segunda a Sexta das 09:00h às 18:00h</div>
+                        </div>                       
                     </div>
                 </div>
-
-                <div class="col-md-12 col-lg-12 col-xs-12 destaque-card p-0">
-                    <div class="row p-0">
+            </div>
+        
+            <!--MOBILE-->
+        
+            <div class="row d-block d-md-none mt-5 mx-auto">
+                <div class="row d-flex justify-content-center text-center mt-5">
+                    <div class="row mt-3 d-flex justify-content-center text-center">
+                        <div class="col-8 contato_titulo2">telefone</div>
+                        <div class="col-8 mt-1 contato_conteudo">+351 123 456 789</div>
+                        <div class="col-8 mt-4 contato_titulo2 pt-4">morada</div>
+                        <div class="col-8 mt-1 contato_conteudo">Lorem ipsum dolor sit amet, 12 1234-543 Lorem</div>
+                        <div class="col-8 mt-4 contato_titulo2 pt-4">e-mail</div>
+                        <div class="col-8 mt-1 contato_conteudo">lorem@lorem.pt</div>
+                    </div>
+        
+                    <div class="row d-flex justify-content-center text-center">
+                        <div class="col-1 traco3 mt-5 mb-2 mx-5 d-flex"></div>
+                    </div>
+        
+                    <div class="row d-flex justify-content-center text-center">
                         <div class="col-12">
-                            <img class="img-dest" src="/imagens/desktop/livro3.jpg" alt="livro1">
+                            <div class="row mt-5 d-flex justify-content-center text-center">
+                                <div class="col-3 ms-2 contato_titulo2">Horário</div>
+                            </div>
+                            <div class="row mt-1 d-flex justify-content-center text-center mb-5">
+                                <div class="col-8 ms-2 contato_conteudo mb-4">De Segunda a Sexta das 09:00h às 18:00h</div>
+                            </div>                       
                         </div>
-                    </div>
-                    <div class="col p-0 dest-titulo mt-3 mx-4">o coleccionador de amnesias</div>
-                    <div class="col novidade mx-4 mt-2">Novidade</div>
-                    <div class="col p mx-4 p-1">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas molestias dolorem itaque nostrum delectus esse voluptatem corporis earum, reiciendis, voluptatibus accusamus reprehenderit.
-                    </div>
-                    <div class="col">
-                        <form action="livro.html">
-                            <button name="livro" value="" class="saber_mais destaque-sm me-4 mt-2"></button>
-                        </form>
-                    </div>
+                    </div> 
                 </div>
             </div>
         </main>
@@ -365,7 +345,7 @@
                     <div class="collapse  navbar-collapse justify-content-center" id="navbarNavDropdown">
                         <ul class="navbar-nav">
                             <li class="nav-item">
-                                <a class="nav-link menu-rodape selected" aria-current="page" href="index.html">home</a>
+                                <a class="nav-link menu-rodape" aria-current="page" href="index.html">home</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link menu-rodape" aria-current="page" href="autor.html">autor</a>
@@ -377,7 +357,7 @@
                                 <a class="nav-link menu-rodape" aria-current="page" href="imprensa.html">imprensa</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link menu-rodape" aria-current="page" href="contactos.html">contactos</a>
+                                <a class="nav-link menu-rodape selected" aria-current="page" href="contactos.html">contactos</a>
                             </li>
                         </ul>
                     </div>
@@ -445,21 +425,7 @@
             </div>
 
             <!--Mobile-->
-   
-            <div class="row d-block d-md-none mt-5 px-0">
-                <div class="row d-flex justify-content-center text-center mt-5">
-                    <div class="col-8 t1">contactos</div>
-                    <div class="row mt-3 d-flex justify-content-center text-center">
-                        <div class="col-8 contato_titulo2">morada</div>
-                        <div class="col-8 mt-1 contato_conteudo">Lorem ipsum dolor sit amet, 12 1234-543 Lorem</div>
-                        <div class="col-8 mt-4 contato_titulo2">Telefone</div>
-                        <div class="col-8 mt-1 contato_conteudo">+351 123 456 789</div>
-                        <div class="col-8 mt-4 contato_titulo2">e-mail</div>
-                        <div class="col-8 mt-1 contato_conteudo">lorem@lorem.pt</div>
-                    </div>                     
-                </div>
-            </div>
-            
+
             <div class="row d-flex justify-content-center text-center d-block d-md-none mt-5">
                 <div class="col-12 t1 mt-5">siga-me nas redes sociais</div>
                 <div class="col-8 d-flex justify-content-center gap-4 mt-4">
