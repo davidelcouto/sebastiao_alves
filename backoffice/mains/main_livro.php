@@ -2,11 +2,6 @@
 
 require_once("php/funcoes/funcoes.php");
 
-if(!verificarLogado()){
-    header("Location: index.php");
-    exit();
-}
-
 $form = isset($_GET["accao"]);
 
 if ($form){
@@ -39,7 +34,7 @@ $livros = selectSQL("SELECT * FROM livros");
 ?>
 
 
-<main>
+<main class="foco">
     <?php if ($form):?>
     
             <div class="row caixas">
@@ -58,7 +53,7 @@ $livros = selectSQL("SELECT * FROM livros");
     
     <?php else: ?>
         <div class="row caixas">
-                <h3 class="h3_dif_cor"><b>BACKOFFICE LIVROS</b></h3>
+                <h3 class="h3_dif_cor"><b>LIVROS</b></h3>
 
                 <br><br><br><br>
 

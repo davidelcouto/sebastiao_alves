@@ -3,11 +3,6 @@
 
 require_once("php/funcoes/funcoes.php");
 
-if(!verificarLogado()){
-    header("Location: index.php");
-    exit();
-}
-
 $form = isset($_GET["insta"]) && isset($_GET["face"]) && isset($_GET["linkd"]);
 
 if ($form){
@@ -23,7 +18,7 @@ $redes = selectSQLUnico("SELECT * FROM redessociais");
 ?>
 
 
-<main>
+<main class="redes">
     <?php if ($form):?>
         <div class="row caixas">
             <div class="col-12 titulo_2 p-4">
@@ -41,7 +36,7 @@ $redes = selectSQLUnico("SELECT * FROM redessociais");
 
     <?php else: ?>
         <div class="row caixas d-flex justify-content-center">
-            <h3 class="h3_dif_cor"><b>BACKOFFICE REDES SOCIAIS</b></h3>
+            <h3 class="h3_dif_cor"><b>REDES SOCIAIS</b></h3>
             
             <br><br><br><br>
 

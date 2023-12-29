@@ -2,11 +2,6 @@
 
 require_once("php/funcoes/funcoes.php");
 
-if(!verificarLogado()){
-    header("Location: index.php");
-    exit();
-}
-
 $form = isset($_GET["accao"]);
 if ($form){
     $accao=$_GET["accao"];
@@ -42,7 +37,7 @@ $carousel = selectSQL("SELECT * FROM carousel");
 
 ?>
 
-<main>
+<main class="foco">
     <?php if ($form):?>
     
         <div class="row caixas">
@@ -61,7 +56,7 @@ $carousel = selectSQL("SELECT * FROM carousel");
     
     <?php else: ?>
         <div class="row caixas">
-            <h3 class="h3_dif_cor"><b>BACKOFFICE CAROUSEL</b></h3>
+            <h3 class="h3_dif_cor"><b>CAROUSEL</b></h3>
 
             <br><br><br><br>
 

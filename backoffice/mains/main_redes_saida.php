@@ -2,11 +2,6 @@
 
 require_once("php/funcoes/funcoes.php");
 
-if(!verificarLogado()){
-    header("Location: index.php");
-    exit();
-}
-
 $form = isset($_GET["insta"]) && isset($_GET["face"]) && isset($_GET["linkd"]);
 
 if ($form){
@@ -17,7 +12,7 @@ $redes = selectSQLUnico("SELECT * FROM redessociais");
 
 ?>
 
-<main>
+<main class="redes">
     <div class="row caixas">
         <div class="col-12 titulo_2 p-4">
             <b>EDITAR REDES SOCIAIS</b>

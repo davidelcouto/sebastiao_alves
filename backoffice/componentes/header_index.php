@@ -1,3 +1,25 @@
+<?php
+
+require_once("php/funcoes/funcoes.php");
+
+if(verificarLogado()){
+    header("Location: index.php");
+    exit();
+}
+
+$form = isset($_POST["login"]) && isset($_POST["senha"]);
+
+if($form){
+    $login = $_POST["login"];
+    $senha = $_POST["senha"];
+    if(fazerLogin($login, $senha)){
+        header("Location: inicio.php");
+        exit();
+    }
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="pt">
 

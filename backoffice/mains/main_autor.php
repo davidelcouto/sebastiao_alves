@@ -2,11 +2,6 @@
 
 require_once("php/funcoes/funcoes.php");
 
-if(!verificarLogado()){
-    header("Location: index.php");
-    exit();
-}
-
 $form = isset($_GET["imagem"]) && isset($_GET["texto_grande"]);
 
 if ($form){
@@ -20,7 +15,7 @@ $autor = selectSQLUnico("SELECT * FROM autor");
 ?>
 
 
-<main>
+<main class="foco">
     <?php if ($form):?>
     
         <div class="row caixas">
@@ -39,7 +34,7 @@ $autor = selectSQLUnico("SELECT * FROM autor");
 
     <?php else: ?>
         <div class="row caixas d-flex justify-content-center">
-            <h3 class="h3_dif_cor"><b>BACKOFFICE AUTOR</b></h3>
+            <h3 class="h3_dif_cor"><b>AUTOR</b></h3>
 
             <br><br><br><br>
 

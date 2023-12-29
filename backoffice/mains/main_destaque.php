@@ -3,11 +3,6 @@
 require_once("php/funcoes/funcoes.php");
 require_once("php/funcoes/helper.php");
 
-if(!verificarLogado()){
-    header("Location: index.php");
-    exit();
-}
-
 $form = isset($_GET["destaque_1"]) && isset($_GET["destaque_2"]) && isset($_GET["destaque_3"]);
 
 if($form){
@@ -38,7 +33,7 @@ if($home["destaque_3"] != 0){
 
 ?>
         
-<main>
+<main class="foco">
     <?php if ($form):?>
     
         <div class="row caixas">
@@ -55,7 +50,7 @@ if($home["destaque_3"] != 0){
     
     <?php else: ?>
         <div class="row caixas">
-                <h3 class="h3_dif_cor"><b>BACKOFFICE DESTAQUES (MAX. 3)</b></h3>
+                <h3 class="h3_dif_cor"><b>DESTAQUES (MAX. 3)</b></h3>
                 <br><br>
                 <br><br>
                 <table class="mx-auto w-100 pb-5 mb-5">

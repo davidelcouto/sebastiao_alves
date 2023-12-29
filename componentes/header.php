@@ -23,7 +23,7 @@
     </head>
 
     <body>
-        <header class="container-fluid px-0 foco">
+        <header class="container-fluid px-0">
             <div class="row inicio" id="menu-home">
                 <div class="col mx-auto d-none d-md-block">
                     <div class="col-12 d-flex justify-content-between titulo justify-content-md-center mt-5">sebastião alves</div>

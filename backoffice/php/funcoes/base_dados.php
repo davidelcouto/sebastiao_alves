@@ -4,7 +4,8 @@ $base_dados = [
     "host" => "localhost",
     "usuario" => "root",
     "senha" => "",
-    "nome" => "sebastiao"
+    "nome" => "sebastiao",
+    "charset" => "utf8mb4"
 ];
 
 

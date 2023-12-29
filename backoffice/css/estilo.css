@@ -16,6 +16,10 @@ body{
     padding: 10px;
 }
 
+.foco{
+    scroll-behavior: smooth;
+}
+
 
 header > .entrada{
     font-size: 50px;

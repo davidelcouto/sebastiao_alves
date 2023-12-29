@@ -32,4 +32,5 @@ function verificarLogado(){
     return $sessao;
 }
 
+
 ?>

@@ -2,11 +2,6 @@
 
 require_once("php/funcoes/funcoes.php");
 
-if(!verificarLogado()){
-    header("Location: index.php");
-    exit();
-}
-
 $form = isset($_GET["imagem"]) && isset($_GET["texto_grande"]);
 
 if ($form){
@@ -18,44 +13,44 @@ $autor = selectSQLUnico("SELECT * FROM autor");
 ?>
 
 
-<main>
-<div class="row caixas">
-    <div class="col-12 titulo_2 p-4">
-        <b>EDITAR AUTOR</b>
-
-        <br><br>
-
-        <form action="autor.php" >
-            <label>Link da imagem que fica na página <ins>AUTOR</ins></a>:</label>
-
-            <br>
-
-            <input type="text" name="imagem" value="<?= $autor["imagem"]; ?>" required="required" autofocus placeholder="Link imagem">
-            <button> 
-                <a href="../gestor/tinyfilemanager.php" target="_blank">
-                    CARREGAR IMAGEM 
-                </a>
-            </button>
+<main class="foco">
+    <div class="row caixas">
+        <div class="col-12 titulo_2 p-4">
+            <b>EDITAR AUTOR</b>
 
             <br><br>
 
-            <label>Texto sobre o <ins>AUTOR</ins></a>:</label>
+            <form action="autor.php" >
+                <label>Link da imagem que fica na página <ins>AUTOR</ins></a>:</label>
 
-            <br>
+                <br>
 
-            <textarea name="texto_grande" id="texto" placeholder="Escreva aqui a sua descrição..." cols="30" rows="10"><?= $autor["texto_grande"]; ?></textarea>
-            <script>
-                ClassicEditor
-                    .create( document.querySelector('#texto') )
-                    .catch( error => {
-                        console.error(error);
-                    } );
-            </script>
+                <input type="text" name="imagem" value="<?= $autor["imagem"]; ?>" required="required" autofocus placeholder="Link imagem">
+                <button> 
+                    <a href="../gestor/tinyfilemanager.php" target="_blank">
+                        CARREGAR IMAGEM 
+                    </a>
+                </button>
 
-            <br>
+                <br><br>
 
-            <input type="submit" value="EDITAR">
-        </form>
+                <label>Texto sobre o <ins>AUTOR</ins></a>:</label>
+
+                <br>
+
+                <textarea name="texto_grande" id="texto" placeholder="Escreva aqui a sua descrição..." cols="30" rows="10"><?= $autor["texto_grande"]; ?></textarea>
+                <script>
+                    ClassicEditor
+                        .create( document.querySelector('#texto') )
+                        .catch( error => {
+                            console.error(error);
+                        } );
+                </script>
+
+                <br>
+
+                <input type="submit" value="EDITAR">
+            </form>
+        </div>
     </div>
-</div>
 </main>

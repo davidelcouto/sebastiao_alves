@@ -2,11 +2,6 @@
 
 require_once("php/funcoes/funcoes.php");
 
-if(!verificarLogado()){
-    header("Location: index.php");
-    exit();
-}
-
 $form = isset($_GET["id"]);
 
 if ($form){
@@ -16,7 +11,7 @@ if ($form){
 ?>
 
 
-<main>
+<main class="foco">
     <div class="row caixas">
         <div class="col-12 titulo_2 p-4">
             <b>NOVO DESTAQUE IMPRENSA</b>

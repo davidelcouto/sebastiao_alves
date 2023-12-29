@@ -2,11 +2,6 @@
 
 require_once("php/funcoes/funcoes.php");
 
-if(!verificarLogado()){
-    header("Location: index.php");
-    exit();
-}
-
 $form = isset($_GET["telefone"]) && isset($_GET["morada"]) && isset($_GET["mail"]) && isset($_GET["horario"]);
 
 if ($form){
@@ -18,7 +13,7 @@ $contactos = selectSQLUnico("SELECT * FROM contactos");
 ?>
 
 
-<main>
+<main class="foco">
     <div class="row caixas">
         <div class="col-12 titulo_2 p-4">
             <b>EDITAR CONTACTOS</b>
